@@ -7,8 +7,6 @@ const { SIGNING_SECRET, OAUTH_BOT_TOKEN } = process.env;
 const slackApp = new App({
   signingSecret: SIGNING_SECRET,
   token: OAUTH_BOT_TOKEN,
-  ignoreSelf: false,
-  logLevel: LogLevel.DEBUG,
 });
 
 slackApp.event(EVENTS.APP_HOME_OPENED, async ({ event, client }) => {
