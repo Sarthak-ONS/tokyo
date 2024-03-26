@@ -1,0 +1,27 @@
+{
+    "type": "home",
+    "blocks": [
+        {
+            "type": "header",
+            "text": {
+                "type": "plain_text",
+                "text": "Tokyo",
+                "emoji": true
+            }
+        },
+        {
+            "type": "section",
+            "text": {
+                "type": "mrkdwn",
+                "text": "*Your Jira ally in Slack!*"
+            }
+        },
+        {
+            "type": "section",
+            "text": {
+                "type": "mrkdwn",
+                "text": "Tokyo is a Slack bot inspired by Money Heist, designed to streamline your Jira experience. With Tokyo, you can easily create and manage Jira issues directly from Slack, keeping your team's workflow smooth and efficient. Say goodbye to switching between platforms and let Tokyo simplify your project management tasks."
+            }
+        }
+    ]
+}
