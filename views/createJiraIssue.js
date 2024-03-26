@@ -36,7 +36,7 @@ const createJiraIssue = ({ issueTypes = [] }) => {
         },
         label: {
           type: "plain_text",
-          text: "Description of Issue",
+          text: "Summary of Issue",
           emoji: true,
         },
       },
