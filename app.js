@@ -25,6 +25,26 @@ slackApp.event(EVENTS.MESSAGE, async ({ event, client }) => {
       channel: event.channel,
       text: `Issue created: ${res.key} - ${res.self}`,
       thread_ts: event.ts,
+      blocks: [
+        {
+          type: "section",
+          text: {
+            type: "mrkdwn",
+            text: `Issue created: ${res.key} - ${res.self}`,
+          },
+          accessory: {
+            type: "button",
+            text: {
+              type: "plain_text",
+              text: "View Issue",
+              emoji: true,
+            },
+            value: "click_me_123",
+            url: res.self,
+            action_id: "button-action",
+          },
+        },
+      ],
     });
   } catch (error) {
     await client.chat.postMessage({
